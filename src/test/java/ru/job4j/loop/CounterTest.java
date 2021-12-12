@@ -18,7 +18,7 @@ public class CounterTest {
     public void sumFromThreeToEightThenEighteen() {
         int start = 3;
         int finish = 8;
-        int result = Counter.sum(start, finish);
+        int result = Counter.sumByEven(start, finish);
         int expected = 18;
         Assert.assertEquals(expected, result);
     }
