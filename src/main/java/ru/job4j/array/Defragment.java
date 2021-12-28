@@ -6,9 +6,8 @@ public class Defragment {
             if (array[index] == null) {
                 for (int point = index + 1; point < array.length; point++) {
                     if (array[point] != null) {
-                        String tmpStr = array[point];
-                        array[point] = array[index];
-                        array[index] = tmpStr;
+                        array[index] = array[point];
+                        array[point] = null;
                         break;
                     }
                 }
